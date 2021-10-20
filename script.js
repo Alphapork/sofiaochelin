@@ -18,13 +18,14 @@ window.addEventListener('resize', function(event) {
 }, true);
 
 function scrollToElem(id) {
-    if(document.getElementById("hamburger").style.display != 'none') {
-        document.getElementById("menuList").style.display = "none";
-    }
+    var ham = document.getElementById("hamburger");
+    if(window.getComputedStyle(ham).display == 'block') {
+        document.getElementById("menuList").style.display = 'none';
+        console.log("why")
+    } 
     var elem = document.getElementById(id);
     var header = document.getElementById("headerId");
     var y = elem.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
-    console.log(y-header.clientHeight);
     window.scrollTo({top: y-header.clientHeight, behavior: 'smooth'});
 }
 
