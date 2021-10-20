@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("elinsofia2.png");
+    background-color: #c1c3c2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    
+}
+
+.columns {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.bgimage {
+    flex-shrink: 1;
+    width: 35%;
+}
+.dansbild {
+}
+
+.content {
+    background-color: #e7e5d4;
+    width: 56%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    padding: 10px;
+    padding-top: 40px;
+    max-width: 500px;
+}
+
+.logo_img {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    max-width: 600px;
+}
+
+.sunfeathers {
+    background-color: #c1c3c2;
+    width: 9%;
+}
