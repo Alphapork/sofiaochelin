@@ -8,7 +8,6 @@ body {
 }
 
 .container {
-    
 }
 
 .columns {
@@ -18,10 +17,8 @@ body {
 }
 
 .bgimage {
-    flex-shrink: 1;
+    flex-shrink: 2;
     width: 35%;
-}
-.dansbild {
 }
 
 .content {
@@ -61,7 +58,6 @@ body {
 }
 
 .menu li {
-    display: inline-block;
 }
 
 .menu li a {
@@ -89,4 +85,11 @@ body {
 .sunfeathers {
     background-color: #c1c3c2;
     width: 9%;
+    flex-shrink: 2;
+}
+
+@media only screen and (max-width: 400px) {
+    .content {
+        width: 100%;
+    }
 }
