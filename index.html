@@ -22,13 +22,13 @@
                       </a>
                     <div class="menu_list" id="menuList">
                         <ul>    
-                            <li><a href="#kortinfo" onclick="scrollToElem('kortInfo')">Kortinfo</a></li>
-                            <li><a href="#resaochboende" onclick="scrollToElem('resaBo')">Resa och boende</a></li>
-                            <li><a href="#middag" onclick="scrollToElem('middagId')">Middag</a></li>
-                            <li><a href="#talochspex" onclick="scrollToElem('talSpex')">Tal och spex</a></li>
-                            <li><a href="#presenter" onclick="scrollToElem('presenterId')">Presenter</a></li>
-                            <li><a href="#dresscode" onclick="scrollToElem('dresscodeId')">Dresscode</a></li>
-                            <li><a href="#osa" onclick="scrollToElem('osaId')">OSA</a></li>
+                            <li><a href="#kortinfo" id="kortinfoLink" onclick="scrollToElem('kortInfo','kortinfoLink')" class="list_item">Kortinfo</a></li>
+                            <li><a href="#resaochboende" id="resaLink" onclick="scrollToElem('resaBo', 'resaLink')" class="list_item">Resa och boende</a></li>
+                            <li><a href="#middag" id="middagLink" onclick="scrollToElem('middagId', 'middagLink')" class="list_item">Middag</a></li>
+                            <li><a href="#talochspex" id="talLink" onclick="scrollToElem('talSpex', 'talLink')" class="list_item">Tal och spex</a></li>
+                            <li><a href="#presenter" id="presenterLink" onclick="scrollToElem('presenterId', 'presenterLink')" class="list_item">Presenter</a></li>
+                            <li><a href="#dresscode" id="dresscodeLink" onclick="scrollToElem('dresscodeId', 'dresscodeLink')" class="list_item">Dresscode</a></li>
+                            <li><a href="#osa" id="osaLink" onclick="scrollToElem('osaId', 'osaLink')" class="list_item">OSA</a></li>
                         </ul>
                       </div>
                 </div>
@@ -36,16 +36,19 @@
                 <div class="main_content">
                     <div class="section">
 
-                        <p>
+                       
                             <h3> Välkomna på vigsel och efterföljande bröllopsfest!</h3>
-                        </p>
+                
+                        <img src="avskiljare.png" class="avskiljare">
                         <p>
                             Vigseln äger rum klockan 13.00 i Danmarks Kyrka strax utanför Uppsala. 
                             Efterföljande bröllopsfest med middag kommer hållas ett stenkast från kyrkan i Danmarks Bygdegård, där vi blir kvar hela kvällen och natten.
                         </p>
+                        
                     </div>
                     <div class="section" id="kortInfo">
                         <h3>Kortinfo</h3>
+                         <img src="avskiljare.png" class="avskiljare">
                         <ul>
                             <li>Danmarks Kyrka, Uppsala</li>
                             <li>18:e juni 2022</li>
@@ -53,9 +56,11 @@
                             <li>Dresscode kavaj</li>
                             <li><a href="https://forms.gle/uvW2387g8ejDMzDj8">Anmälan</a></li>
                         </ul>
+                        
                     </div>
                     <div class="section" id="resaBo">
                             <h3>Resa och boende</h3>
+                            <img src="avskiljare.png" class="avskiljare">
                             <p>
                                 Både kyrkan och festlokalen ligger en kvart med bil från Uppsala centralstation och cirka 45 minuter med bil från Stockholms centralstation. 
                                 Parkering finns vid festlokalen och vid kyrkan.
@@ -74,6 +79,7 @@
                     </div>
                     <div class="section" id="middagId">
                         <h3>Middag</h3>
+                        <img src="avskiljare.png" class="avskiljare">
                         <p>
                             Middag kommer serveras under kvällen. Eftersom vigseln är redan vid 13 så rekommenderar vi er dock att äta en tidig lunch.
                         </p>
@@ -83,6 +89,7 @@
                     </div>
                     <div class="section" id="talSpex">
                         <h3>Tal och spex</h3>
+                        <img src="avskiljare.png" class="avskiljare">
                         <p>
                             Vill du hålla tal eller annat spex (enskilt eller i grupp); fyll gärna i det i formuläret vid anmälan så kommer en av våra toastmasters kontakta dig senare. Det går såklart bra att anmäla tal i efterhand.
                         </p>
@@ -92,12 +99,14 @@
                     </div>
                     <div class="section" id="presenterId">
                         <h3>Presenter</h3>
+                        <img src="avskiljare.png" class="avskiljare">
                         <p>
                             Brudparet önskar sig bidrag till bröllopsresa.
                         </p>
                     </div>
                     <div class="section" id="dresscodeId">
                         <h3>Dresscode</h3>
+                        <img src="avskiljare.png" class="avskiljare">
                         <p>
                             Klädkoden på bröllopet är kavaj, men vi uppmuntrar de som vill att klä sig i uniform, frack eller folkdräkt. Vi har full förståelse för att alla gäster inte har tillgång till, eller inte känner sig bekväma i, högtidsdräkt. Men vill man så får man.
                         </p>
@@ -107,6 +116,7 @@
                     </div>
                     <div class="section" id="osaId">
                         <h3>OSA</h3>
+                        <img src="avskiljare.png" class="avskiljare">
                         <p>
                             OSA sker via <a href="https://forms.gle/dD4dtMgDRtKikXSZ6">vårt anmälningsformulär</a> senast XXXX. Osa gärna även om du inte kan komma.
                         </p>

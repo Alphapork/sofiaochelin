@@ -73,13 +73,19 @@ body {
 .menu li a {
     display: block;
     padding: 16px;
-    text-decoration: none;
     text-align: center;
     color: black;
 }
 
+.list_item {
+    text-decoration: none;
+}
 .menu_list {
     width: 100%;
+}
+
+.selected {
+    text-decoration: underline;
 }
 
 .icon {
@@ -96,11 +102,14 @@ body {
 
 .section {
     max-width: 600px;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
+
+
 
 .section h3 {
     text-align: center;
@@ -125,4 +134,8 @@ body {
         display: block;
     }
     
+}
+.avskiljare {
+    width: 30%;
+
 }

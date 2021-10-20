@@ -16,8 +16,14 @@ window.addEventListener('resize', function(event) {
         x.style.display = "none";
     }
 }, true);
+var current = null;
+function scrollToElem(id, selfId) {
+    if(current != null) {
+        current.classList.remove("selected");
+    }
+    current = document.getElementById(selfId);
+    current.classList.add("selected");
 
-function scrollToElem(id) {
     var ham = document.getElementById("hamburger");
     if(window.getComputedStyle(ham).display == 'block') {
         document.getElementById("menuList").style.display = 'none';
