@@ -96,7 +96,14 @@ body {
 
 .section {
     max-width: 600px;
-    margin-bottom: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section h3 {
+    text-align: center;
 }
 
 .sunfeathers {
