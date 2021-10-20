@@ -12,9 +12,9 @@
         <div class="columns">
             <div class="bgimage"></div>
             <div class="content">
-                <div class="header">
+                <div class="header" id="headerId">
                 <div class="logo">
-                    <img src="Logo.png" class="logo_img">
+                    <img src="Logo.png" class="logo_img" onclick="scrollToTop()">
                 </div>
                 <div class="menu" id="menuHeader">
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()" id="hamburger">
@@ -22,12 +22,13 @@
                       </a>
                     <div class="menu_list" id="menuList">
                         <ul>    
-                            <li><a href="#home">Kortinfo</a></li>
-                            <li><a href="#news">Resa och boende</a></li>
-                            <li><a href="#contact">Middag</a></li>
-                            <li><a href="#about">Tal och spex</a></li>
-                            <li><a href="#about">Presenter</a></li>
-                            <li><a href="#about">OSA</a></li>
+                            <li><a href="#kortinfo" onclick="scrollToElem('kortInfo')">Kortinfo</a></li>
+                            <li><a href="#resaochboende" onclick="scrollToElem('resaBo')">Resa och boende</a></li>
+                            <li><a href="#middag" onclick="scrollToElem('middagId')">Middag</a></li>
+                            <li><a href="#talochspex" onclick="scrollToElem('talSpex')">Tal och spex</a></li>
+                            <li><a href="#presenter" onclick="scrollToElem('presenterId')">Presenter</a></li>
+                            <li><a href="#dresscode" onclick="scrollToElem('dresscodeId')">Dresscode</a></li>
+                            <li><a href="#osa" onclick="scrollToElem('osaId')">OSA</a></li>
                         </ul>
                       </div>
                 </div>
@@ -42,7 +43,7 @@
                             Efterföljande bröllopsfest med middag kommer hållas ett stenkast från kyrkan i Danmarks Bygdegård, där vi blir kvar hela kvällen och natten.
                         </p>
                     </div>
-                    <div class="section">
+                    <div class="section" id="kortInfo">
                         <h3>Kortinfo</h3>
                         <ul>
                             <li>Danmarks Kyrka, Uppsala</li>
@@ -52,7 +53,7 @@
                             <li><a href="https://forms.gle/uvW2387g8ejDMzDj8">Anmälan</a></li>
                         </ul>
                     </div>
-                    <div class="section">
+                    <div class="section" id="resaBo">
                             <h3>Resa och boende</h3>
                             <p>
                                 Både kyrkan och festlokalen ligger en kvart med bil från Uppsala centralstation och cirka 45 minuter med bil från Stockholms centralstation. 
@@ -70,7 +71,7 @@
                                 <a href="http://hotellcentralstation.se/en/boenden/vandrarhem/vandrarhem-uppsala-kungsaengstorg/">Vandrarhem Kungsängstorg</a> och <a href="https://selmashytt.se/">Selmas Hytt & Salong</a> har båda mysiga miljöer och trevliga priser lagom långt från stationen.
                             </p>
                     </div>
-                    <div class="section">
+                    <div class="section" id="middagId">
                         <h3>Middag</h3>
                         <p>
                             Middag kommer serveras under kvällen. Eftersom vigseln är redan vid 13 så rekommenderar vi er dock att äta en tidig lunch.
@@ -79,7 +80,7 @@
                             Framåt kvällskvisten kommer vi även servera vickning.
                         </p>
                     </div>
-                    <div class="section">
+                    <div class="section" id="talSpex">
                         <h3>Tal och spex</h3>
                         <p>
                             Vill du hålla tal eller annat spex (enskilt eller i grupp); fyll gärna i det i formuläret vid anmälan så kommer en av våra toastmasters kontakta dig senare. Det går såklart bra att anmäla tal i efterhand.
@@ -88,13 +89,13 @@
                             Vi kommer dela upp taltiderna i några korta taltider och några lite längre, och våra toastmasters kommer vänligt men bestämt se till att alla talare håller sig till sina tidsspann. När du anmäler dig får du säga om du vill ha en kort taltid på 1 minut, en lite längre taltid på 3 minuter eller ett lite längre pass för spex eller uppträdande. Det kommer finnas begränsat antal av de lite längre passen och en del av dem kommer vara vigda åt nära anhöriga.
                         </p>
                     </div>
-                    <div class="section">
+                    <div class="section" id="presenterId">
                         <h3>Presenter</h3>
                         <p>
                             Brudparet önskar sig bidrag till bröllopsresa.
                         </p>
                     </div>
-                    <div class="section">
+                    <div class="section" id="dresscodeId">
                         <h3>Dresscode</h3>
                         <p>
                             Klädkoden på bröllopet är kavaj, men vi uppmuntrar de som vill att klä sig i uniform, frack eller folkdräkt. Vi har full förståelse för att alla gäster inte har tillgång till, eller inte känner sig bekväma i, högtidsdräkt. Men vill man så får man.
@@ -103,7 +104,7 @@
                             Vi uppmuntrar även våra gäster att bära vilken färg de vill på bröllopet. Är vitt eller svart den färg som du känner dig finast i så är du hemskt välkommen att bära den.
                         </p>
                     </div>
-                    <div class="section">
+                    <div class="section" id="osaId">
                         <h3>OSA</h3>
                         <p>
                             OSA sker via <a href="https://forms.gle/dD4dtMgDRtKikXSZ6">vårt anmälningsformulär</a> senast XXXX. Osa gärna även om du inte kan komma.
