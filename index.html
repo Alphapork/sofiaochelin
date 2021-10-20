@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sofia och Elin</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
         <div class="columns">
             <div class="bgimage"></div>
-            <div class="content"> 
+            <div class="content">
+                <div class="header">
                 <div class="logo">
                     <img src="Logo.png" class="logo_img">
                 </div>
                 <div class="menu" id="menuHeader">
-                    <ul class="menu_list">
-                        <li><a href="#home">Kortinfo</a></li>
-                        <li><a href="#news">Resa och boende</a></li>
-                        <li><a href="#contact">Middag</a></li>
-                        <li><a href="#about">Tal och spex</a></li>
-                        <li><a href="#about">Presenter</a></li>
-                        <li><a href="#about">OSA</a></li>
-                      </ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()" id="hamburger">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    <div class="menu_list" id="menuList">
+                        <ul>    
+                            <li><a href="#home">Kortinfo</a></li>
+                            <li><a href="#news">Resa och boende</a></li>
+                            <li><a href="#contact">Middag</a></li>
+                            <li><a href="#about">Tal och spex</a></li>
+                            <li><a href="#about">Presenter</a></li>
+                            <li><a href="#about">OSA</a></li>
+                        </ul>
+                      </div>
                 </div>
+                </div> 
                 <div class="main_content">
                     <div class="section">
                         <p>
@@ -109,6 +117,6 @@
             <div class="sunfeathers"></div>
         </div>
     </div>
-    
+    <script src="script.js"> </script>
 </body>
 </html>
