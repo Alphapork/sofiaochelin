@@ -72,7 +72,7 @@ function scrollToElem(id, selfId) {
     var elem = document.getElementById(id);
     var header = document.getElementById("headerId");
     var y = elem.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
-    window.scrollTo({top: y-header.clientHeight, behavior: 'smooth'});
+    window.scrollTo({top: y-header.clientHeight -20, behavior: 'smooth'});
 }
 
 function scrollToTop() {
