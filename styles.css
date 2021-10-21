@@ -1,8 +1,10 @@
 html {
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     max-width: 100%;
@@ -215,11 +217,6 @@ h1 {
     .menu ul {
         flex-direction: column;
     }
-
-    .menu_list {
-        
-    }
-
     .icon {
         display: block;
     }
