@@ -27,7 +27,7 @@ body {
 
 .content {
     background-color: #e7e5d4;
-    width: 56%;
+    width: 55%;
     min-width: 400px;
     display: flex;
     flex-direction: column;
