@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    max-width: 100%;
     background-image: url("elinsofia2.png");
     background-color: #c1c3c2;
     background-repeat: no-repeat;
