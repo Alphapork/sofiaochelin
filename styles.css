@@ -7,9 +7,6 @@ body {
     background-attachment: fixed;
 }
 
-.container {
-}
-
 .columns {
     display: flex;
     align-items: stretch;
@@ -44,6 +41,7 @@ body {
     /*box-shadow: -1px 5px 15px 6px rgba(0,0,0,0.28);*/
     box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.11);
     border-radius: 3px;
+    z-index: 1;
 
 }
 
@@ -62,7 +60,6 @@ body {
     top: 0;
     width: 100%;
     background-color: #e7e5d4;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,19 +72,25 @@ body {
     justify-content: space-evenly;
 }
 
-.menu li a {
+
+.list_item {
+    text-decoration: none;
     display: block;
     padding: 16px;
     text-align: center;
     color: black;
 }
-
-.list_item {
-    text-decoration: none;
-}
 .menu_list {
     width: 100%;
+    overflow: hidden;
+    height: auto;
+    -webkit-transition: max-height 0.3s ease-out;
+    -moz-transition: max-height 0.3s ease-out;
+    -o-transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out;
 }
+
+
 
 .selected {
     text-decoration: underline;
@@ -117,7 +120,7 @@ body {
     padding-right: 16px;
     margin-bottom: 20px;
     margin-top: 20px;
-    padding-top: 10vh;
+    padding-top: 2vh;
     
 }
 
@@ -156,16 +159,15 @@ body {
 .sunfeatherimg {
     width: 100%;
 }
-.menu_open {
-    background-color: #f3f2ea; 
-}
-@media (max-width: 1080px) {
+
+
+@media (max-width: 1261px) {
     .menu ul {
         flex-direction: column;
     }
 
     .menu_list {
-        display: none;
+        
     }
 
     .icon {
@@ -173,7 +175,37 @@ body {
     }
     
 }
+
+.menu_open {
+    background-color: #f3f2ea; 
+    
+    position: absolute;
+    max-height: 500px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.menu_closed {
+    background-color: #f3f2ea; 
+    max-height: 0px;
+    position: absolute;
+}
+
+.disp_none {
+    display: none;
+}
+
+.disp_block {
+    display: block;
+}
+
+.menu_container {
+    width: 100%;
+}
+
 .avskiljare {
     width: 30%;
 
 }
+
