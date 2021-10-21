@@ -22,7 +22,7 @@ function myFunction() {
         /*x.style.display = "none";*/
         x.classList.add("menu_closed");
         y.classList.add("fa-bars");
-        y.classList.remove("fa-times")
+        y.classList.remove("fa-times");
       } else {
         x.classList.add("menu_open");
         x.classList.remove("menu_closed");
@@ -43,7 +43,10 @@ window.addEventListener('resize', function(event) {
         x.classList.remove("menu_closed");
     } else {
         var x = document.getElementById("menuList");
+        var y = document.getElementById("hamId");
         x.classList.add("menu_closed");
+        y.classList.add("fa-bars");
+        y.classList.remove("fa-times");
         x.classList.remove("menu_open");
         x.classList.remove("disp_none");
         x.classList.remove("disp_block");
