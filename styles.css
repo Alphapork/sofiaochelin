@@ -17,13 +17,13 @@ body {
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif, 'Calibri';
+    font-family: 'Calibri', 'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
 
 .main_content ul {
-    font-family: 'Source Sans Pro', sans-serif,'Calibri';
+    font-family: 'Calibri', 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-weight: 300 ;
 }
