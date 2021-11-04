@@ -179,6 +179,10 @@ p {
     width: 95%;
 }
 
+.section_content p {
+    align-self: flex-start;
+}
+
 
 
 .section h3 {
